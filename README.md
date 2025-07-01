@@ -28,44 +28,59 @@ Berikut langkah - langkah untuk memulai dan menjalankan proyek lingkungan lokal 
 
 1. *Clone Repository*. Kemudian, buka terminal dan clone proyek ini ke mesin lokal Anda.
     
-    git clone https://github.com/iksnn/tr-sinkron.git
+   ```
+   git clone https://github.com/iksnn/tr-sinkron.git
+   ```
     
-2. *Buka Folder Proyek. Masuk ke dalam *virtual environment.
-    
+3. *Buka Folder Proyek. Masuk ke dalam *virtual environment.
+
+    ```
     .\env\Scripts\activate
+    ```
     
-3. *Install Kebutuhan Backend dengan Menggunakan Django* dengan mengakses command berikut.
-    
+4. *Install Kebutuhan Backend dengan Menggunakan Django* dengan mengakses command berikut.
+
+    ```
     pip install -r requirements.txt 
+    ```
     
-4. *Install Kebutuhan Frontend dengan Menggunakan Vue Js* dengan masuk ke dalam virtual environment terlebih dahulu.
-    
+5. *Install Kebutuhan Frontend dengan Menggunakan Vue Js* dengan masuk ke dalam virtual environment terlebih dahulu.
+
+    ```
     npm install
-    
+    ```
 
 ### Run Aplikasi
 
 Untuk mengakses aplikasi dengan menjalankan perintah berikut.
 1. Masuk terlebih dahulu ke dalam virtual environment 
-    
+
+    ```
     .\env\Scripts\activate
+    ```
     
-2. Akses sisi backend, di dalam virtual environment dengan menjalankan perintah.
-    
+1. Akses sisi backend, di dalam virtual environment dengan menjalankan perintah.
+
+    ```
     py manage.py runserver
+    ```
     
-3. Akses sisi frontend di dalam terminal virtual environment yang berbeda dengan perintah.
-    
+2. Akses sisi frontend di dalam terminal virtual environment yang berbeda dengan perintah.
+
+    ```
     npm run serve
+    ```
     
-4. Kemudian, mengakses link url.
-    
+3. Kemudian, mengakses link url.
+
+    ```
     http://localhost:8080/
-    
+    ```
 
 ### Struktur Proyek
 Arsitektur proyek ini diorganisir sebagai berikut.
 
+```
 tr-sinkron/
 ├── backend/                      # Direktori akses yang menangani semua request dari client
 │   ├── api/
@@ -81,7 +96,7 @@ tr-sinkron/
 │   └── src/                       
 ├── .gitignore                    
 └── requirements.txt              # Kebutuhan pengembangan                           
-
+```
 
 ### Desain dan Model Database
 
