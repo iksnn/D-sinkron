@@ -1,0 +1,141 @@
+.footer-container {
+  background-color: #003f8a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-bar {
+  background-color: #002a58;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.top-bar ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dot {
+  color: gold;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* tengah horizontal */
+  align-items: flex-start;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  background-color: #003f8a;
+  gap: 60px;
+}
+
+
+.footer-left {
+  display: flex;
+  gap: 15px;
+  flex: 1 1 300px;
+  align-items: flex-start;
+}
+
+.footer-left img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-left p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-center {
+  flex: 1 1 150px;
+}
+
+.footer-center p {
+  margin-bottom: 8px;
+}
+
+.footer-center .more-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-right {
+  flex: 0 1 300px;
+}
+
+.footer-right p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-icons a {
+  background-color: white;
+  color: #003f8a;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left img {
+    margin-bottom: 12px;
+  }
+
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .top-bar ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
